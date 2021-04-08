@@ -1,0 +1,1 @@
+//This should be a sliding scale of 0-100 with a "set" or "update" button that waits a second or two before returning a new "update successful" screen
