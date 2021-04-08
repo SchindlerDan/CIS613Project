@@ -12,6 +12,7 @@
   "author": "CodeMix",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
     "npx": "^10.2.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

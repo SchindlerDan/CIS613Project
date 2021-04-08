@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { useHistory, Route, Switch } from 'react-router-dom';
 
- function App () {
+ function App(){
 	const [name, setName] = useState("Please replace this text with your name");
 
 	let history = useHistory();
@@ -14,8 +14,15 @@ import { useHistory, Route, Switch } from 'react-router-dom';
 	  history.push('/BMICalculator');
   }
 
+
 		return(
-			<div>
+			<div
+				 style={{
+				position: 'absolute', left: '50%', top: '30%',
+        		transform: 'translate(-50%, -50%)'
+    
+			}}
+			>
 			<div>
 				<h2>Triangle Test:</h2>
 
@@ -34,9 +41,8 @@ import { useHistory, Route, Switch } from 'react-router-dom';
 				
 			</div>
 		);
-	
+		
 
-}
-
+	}
 
 export default App

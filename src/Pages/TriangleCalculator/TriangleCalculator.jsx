@@ -82,12 +82,25 @@ function TriangleCalculator() {
 
 		return (
 			<div>
+				<div
+				 style={{
+				position: 'absolute', left: '50%', top: '30%',
+        transform: 'translate(-50%, -50%)'
+    
+			}}
+				>
 				<p>Please Enter the three lengths of triangle as integers:</p>
 				<div>
 					<textarea class="A" value={A} onChange={changeA} />
-					<textarea class="B" value={B} onChange={changeB} />
-					<textarea class="C" value={C} onChange={changeC} />
+					
 				</div>
+				<div>
+					<textarea class="B" value={B} onChange={changeB} />
+					
+					</div>
+				<div>
+					<textarea class="C" value={C} onChange={changeC} />
+					</div>
 				<div>
 					{
 						calculated && <div>
@@ -103,6 +116,7 @@ function TriangleCalculator() {
 				<div>
 					<button class="CalculateButton" onClick={calculate}>Calculate Triangle</button>
 					<button class="BackButton" onClick={back}>Back</button>
+				</div>
 				</div>
 			</div>
 		);
