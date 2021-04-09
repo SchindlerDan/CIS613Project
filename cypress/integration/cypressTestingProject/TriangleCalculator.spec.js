@@ -1,22 +1,21 @@
 
-
 describe('Triangle Tests', () => {
+
+
 	/*
 	Weak Normal Boundary Testing
 	*/
 
 	it('Base example 50/50/50', () => {
-	const spy = cy.spy().as("TriangleSpy")
+
 	cy.visit('http://localhost:3000/');
 	cy.get('.TriangleCalculator').click();
 	cy.get('.A').type("50");
 	cy.get('.B').type("50");
-
 	cy.get('.C').type("50");
 	cy.get('.CalculateButton').click();
 	cy.get('.ResultPrintout').should('have.text', ' Equilateral Triangle');
-	expect(spy).to.be.calledOnce;
-	//expect(spy).not.to.be.calledTwice;
+
   })
 
 
