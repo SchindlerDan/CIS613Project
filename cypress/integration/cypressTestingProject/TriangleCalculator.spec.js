@@ -19,6 +19,18 @@ describe('Triangle Tests', () => {
   })
 
 
+  	it('Base example 50/50/50', () => {
+
+	cy.visit('http://localhost:3000/');
+	cy.get('.TriangleCalculator').click();
+	cy.get('.A').type("50");
+	cy.get('.B').type("50");
+	cy.get('.C').type("50");
+	cy.get('.CalculateButton').click();
+	cy.get('.ResultPrintout').should('have.text', ' I am a failure');
+
+  })
+
 
   it('Large A example 9000000000/50/50', () => {
 	cy.visit('http://localhost:3000/');
